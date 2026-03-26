@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premium — Elevated by Design | Study Hub</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background: #FAF6F0;">
+
+  <!-- NAV (dark themed for premium) -->
+  <nav class="nav-dark" style="border-bottom-color: rgba(184,148,75,0.2);">
+    <div class="nav-back" style="display:flex; align-items:center; gap:20px;">
+      <a href="index.html" class="nav-back-text" style="font-family:'Cinzel',serif; font-weight:700; font-size:10px; letter-spacing:0.2em; text-transform:uppercase; color:#8C7B6B;">← Back</a>
+      <div style="width:1px; height:16px; background:rgba(184,148,75,0.2);"></div>
+      <a href="index.html" class="nav-light-logo" style="display:flex; align-items:center; gap:8px;">
+        <div style="width:6px; height:6px; border-radius:50%; background:#B8934B;"></div>
+        <span style="font-family:'Cinzel',serif; font-weight:700; font-size:10px; letter-spacing:0.2em; text-transform:uppercase; color:#FAF6F0;">Study Hub</span>
+      </a>
+    </div>
+    <div class="nav-links">
+      <a href="part1.html" class="nav-link">Part I</a>
+      <a href="part2.html" class="nav-link">Part II</a>
+      <a href="part3.html" class="nav-link">Part III</a>
+      <a href="premium.html" class="nav-link active" style="color:#B8934B; border-bottom-color:#B8934B;">Premium</a>
+    </div>
+  </nav>
+
+  <!-- BANNER -->
+  <div class="part-banner" style="background: #120E09; border-bottom: 1px solid rgba(184,148,75,0.2);">
+    <div class="part-banner-left">
+      <p class="part-banner-eyebrow" style="color: #B8934B;">Premium — Concepts 21–25</p>
+      <h1 class="part-banner-title">Elevated by Design</h1>
+      <p class="part-banner-tagline">Five luxury identities for spaces that command presence and reward ambition.</p>
+    </div>
+    <div class="part-banner-swatches">
+      <div class="swatch" style="background: #1E140D; border: 1px solid rgba(184,148,75,0.3);"></div>
+      <div class="swatch" style="background: #B8934B;"></div>
+      <div class="swatch" style="background: #0F1926;"></div>
+      <div class="swatch" style="background: #5A1A2A;"></div>
+      <div class="swatch" style="background: #1A2E24;"></div>
+    </div>
+  </div>
+
+  <!-- ACCORDION -->
+  <section class="accordion-section" style="background: #FAF6F0;">
+    <div class="accordion-list" id="accordion-premium" style="border-top-color: #D4C5A9;"></div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <div class="footer-logo-dot"></div>
+      <span class="footer-brand-name">Study Hub</span>
+    </div>
+    <p class="footer-tagline">Premium — Concepts 21–25 of 25</p>
+    <nav style="display:flex; gap:24px;">
+      <a href="part1.html" style="font-family:'Cinzel',serif; font-weight:700; font-size:9px; letter-spacing:0.2em; text-transform:uppercase; color:#8C7B6B; transition:color 0.2s;" onmouseover="this.style.color='#B8934B'" onmouseout="this.style.color='#8C7B6B'">Part I</a>
+      <a href="part2.html" style="font-family:'Cinzel',serif; font-weight:700; font-size:9px; letter-spacing:0.2em; text-transform:uppercase; color:#8C7B6B; transition:color 0.2s;" onmouseover="this.style.color='#B8934B'" onmouseout="this.style.color='#8C7B6B'">Part II</a>
+      <a href="part3.html" style="font-family:'Cinzel',serif; font-weight:700; font-size:9px; letter-spacing:0.2em; text-transform:uppercase; color:#8C7B6B; transition:color 0.2s;" onmouseover="this.style.color='#B8934B'" onmouseout="this.style.color='#8C7B6B'">Part III</a>
+      <a href="premium.html" style="font-family:'Cinzel',serif; font-weight:700; font-size:9px; letter-spacing:0.2em; text-transform:uppercase; color:#B8934B;">Premium</a>
+    </nav>
+  </footer>
+
+  <script src="js/concepts.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      buildAccordion(4, 'accordion-premium');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Part II — Between Two Worlds | Study Hub</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background: #FAF6F0;">
+
+  <!-- NAV -->
+  <nav class="nav-light">
+    <div class="nav-back">
+      <a href="index.html" class="nav-back-text">← Back</a>
+      <div class="nav-divider"></div>
+      <a href="index.html" class="nav-light-logo">
+        <div class="nav-light-dot" style="background: #9B4A2C;"></div>
+        <span class="nav-light-brand">Study Hub</span>
+      </a>
+    </div>
+    <div class="nav-links">
+      <a href="part1.html" class="nav-link">Part I</a>
+      <a href="part2.html" class="nav-link active" style="color: #9B4A2C;">Part II</a>
+      <a href="part3.html" class="nav-link">Part III</a>
+      <a href="premium.html" class="nav-link">Premium</a>
+    </div>
+  </nav>
+
+  <!-- BANNER -->
+  <div class="part-banner" style="background: #1B1F2B;">
+    <div class="part-banner-left">
+      <p class="part-banner-eyebrow" style="color: #9B4A2C;">Part Two — Concepts 11–15</p>
+      <h1 class="part-banner-title">Between Two Worlds</h1>
+      <p class="part-banner-tagline">Five brands that live between contrasts — rust and midnight, earth and imagination.</p>
+    </div>
+    <div class="part-banner-swatches">
+      <div class="swatch" style="background: #9B4A2C;"></div>
+      <div class="swatch" style="background: #F5EDE3;"></div>
+      <div class="swatch" style="background: #1B1F2B; border: 1px solid rgba(255,255,255,0.15);"></div>
+      <div class="swatch" style="background: #5C3D5E;"></div>
+      <div class="swatch" style="background: #E8DED1;"></div>
+    </div>
+  </div>
+
+  <!-- ACCORDION -->
+  <section class="accordion-section">
+    <div class="accordion-list" id="accordion-part2"></div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="part-footer">
+    <div class="footer-brand" style="gap: 8px;">
+      <div style="background: #9B4A2C; width: 6px; height: 6px; border-radius: 50%;"></div>
+      <span style="font-family: 'Cinzel', serif; font-weight: 700; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: #3D2B1F;">Study Hub</span>
+    </div>
+    <nav class="part-footer-nav">
+      <a href="part1.html">Part I</a>
+      <a href="part2.html" class="current">Part II</a>
+      <a href="part3.html">Part III</a>
+      <a href="premium.html">Premium</a>
+    </nav>
+    <span style="font-family: 'Outfit', sans-serif; font-size: 11px; color: #8C7B6B;">Concepts 11–15 of 25</span>
+  </footer>
+
+  <script src="js/concepts.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      buildAccordion(2, 'accordion-part2');
+    });
+  </script>
+</body>
+</html>
